@@ -15,7 +15,7 @@ openpyxl>=3.1.2
 # Database connectivity
 sqlalchemy>=2.0.0
 pymysql>=1.1.0  # If using MySQL
-sqlite3>=3.0.0  # If using SQLite
+# sqlite3 is built into Python, no need to install separately
 
 # Authentication
 bcrypt>=4.0.0
@@ -23,7 +23,10 @@ python-jose>=3.3.0  # For JWT tokens
 passlib>=1.7.4
 
 # Multilingual support
-googletrans>=3.1.0a0
-langdetect>=1.0.9
+googletrans==3.1.0a0  # Note: specific version to avoid issues
+
+# Image processing
+pillow>=10.0.0
+
 # Utility
 python-dotenv>=1.0.0
